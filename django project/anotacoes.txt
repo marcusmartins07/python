@@ -1,0 +1,27 @@
+Comandos para inciar o projeto
+
+django-admin startproject projeto_cad_usuarios
+
+# preciso acessar pasta que contem o manage.py
+cd .\projeto_cad_usuarios\
+
+Após vou criar o app
+django-admin startapp app_cad_usuarios
+
+# Proximos passos
+ 
+Rota = urls.py -> views.py -> HTML
+
+#Rodar aplicação
+python .\manage.py runserver
+
+# Migrations
+
+Models = objetos que representam um banco de dados -
+> Transforma código python em código sql -
+> Cria as tabelas dentro do banco de dados
+
+# rodando Migrations
+python .\manage.py makemigrations   
+
+python .\manage.py migrate
